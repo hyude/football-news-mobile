@@ -55,10 +55,6 @@ class LeftDrawer extends StatelessWidget {
             title: const Text('Add News'),
             // Bagian redirection ke NewsFormPage
             onTap: () {
-              /*
-              TODO: Buatlah routing ke NewsFormPage di sini,
-              setelah halaman NewsFormPage sudah dibuat.
-              */
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => NewsFormPage()),
@@ -70,7 +66,7 @@ class LeftDrawer extends StatelessWidget {
             title: const Text('News List'),
             onTap: () {
               // Route to news list page
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (context) => const NewsEntryListPage(),
